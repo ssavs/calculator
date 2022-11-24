@@ -1,43 +1,68 @@
-.container{
-    /* max-width: 400px; */
-    margin: 0;
+*{
+    margin: auto;
     padding: 0;
-    box-shadow: 0px 0px 15px 2px rgb(188, 41, 194);
-    display: grid;
-    grid-template-columns: repeat(4, 100px);
-    grid-template-rows: minmax(120px) repeat(5, 100px);
-    justify-content: center;
-    align-content: center;
+    background-color: rgb(218, 211, 218);
+    font-family: Arial, Helvetica, sans-serif;
+    outline: none;
+    box-sizing: border-box;
 }
-.spanThisThing {
-    grid-column: span 2;
+
+.container {
+height: 40vh;
+display: flex;
+justify-content: center;
+align-items: center;
+padding-top: 38px;
+
 }
-.displayPanel {
-    grid-column: 1 / -1;
+
+.calculator {
+    background-color: rgb(199, 149, 187);
+    padding:15px;
+    border-radius: 30px;
+    display:grid;
 }
-#small-display{
-    text-align: right;
-    height: 5px;
-    line-height: 20px;
-    padding-right: 20px;
-    font-size: 10px;
-}
-#display{
-    text-align: right;
-    height: 60px;
-    line-height: 70px;
-    padding-right: 20px;
-    font-size: 25px;
-}
-button{
-    border: 0.5px solid rgb(202, 35, 194);
-    line-height: 75px;
+
+h1{
     text-align: center;
+    font-size: 40px;
+    padding-top: 20px;
+}
+
+input {
+    grid-column: span 4;
+    height: 70px;
+    width: 265px;
+    background-color: rgb(0, 0, 0);
+    border:none;
+    border-radius: 12px; 
+    color: whitesmoke;
+    font-size: 30px;       
+    text-align: end;   
+    margin: auto;
+    margin-top: 40px;    
+    margin-bottom: 30px;  
+    padding:20px;   
+}
+
+button{
+    height: 45px;
+    width: 45px;
+    background-color: rgb(242, 242, 242);
+    border:none;
+    border-radius:35px;
+    margin: 8px;
     font-size: 20px;
-    cursor: pointer;
 }
-button:hover{
-    background-color: rgb(216, 157, 207);
-    color: white;
-    /* transition: 0.5s ease-in-out; */
+
+button:hover {
+    background-color: rgb(214, 34, 199);
 }
+
+.equal {
+    border-radius: 40px;
+    background-color: rgb(159, 65, 178);
+    grid-column: span 2;
+    width: 110px;
+}
+
