@@ -29,7 +29,7 @@ h1{
     padding-top: 20px;
 }
 
-input {
+#outputScreen {
     grid-column: span 4;
     height: 70px;
     width: 265px;
