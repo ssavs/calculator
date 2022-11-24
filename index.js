@@ -21,7 +21,12 @@ function display (num){
 
 function evaluateSum() {
     // outdocument.getElementById('outputScreen').innerText
-    outputScreen.value = eval(outputScreen.value);
+    try {
+        outputScreen.value = eval(outputScreen.value);
+    }
+    catch(err) {
+        outputScreen.value = ("Error");
+    }
 }
 
 
