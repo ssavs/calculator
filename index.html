@@ -11,25 +11,25 @@
     <h1>CALCULATOR</h1>
 <div class="container">
     <div class="calculator">
-
-        <input type="text" readonly value="" id="outputScreen">
+  
+        <input type="text" readonly value="" id="outputScreen" placeholder="0">
         <button onclick="Clear()">AC</button> 
         <button onclick="Del()">DEL</button>
-        <button onclick="display('%')">%</button>
-        <button onclick="display('/')">÷</button>
+        <button onclick="displayOpe('%')">%</button>
+        <button onclick="displayOpe('/')">÷</button>
         <button onclick="display(7)">7</button>
         <button onclick="display(8)">8</button>
         <button onclick="display(9)">9</button>
-        <button onclick="display('*')">x</button>
+        <button onclick="displayOpe('*')">x</button>
         <button onclick="display(4)">4</button>
         <button onclick="display(5)">5</button>
         <button onclick="display(6)">6</button>
-        <button onclick="display('-')">-</button>
+        <button onclick="displayOpe('-')">-</button>
         <button onclick="display(1)">1</button>
         <button onclick="display(2)">2</button>
         <button onclick="display(3)">3</button>
-        <button onclick="display('+')">+</button>
-        <button onclick="display('.')">.</button>
+        <button onclick="displayOpe('+')">+</button>
+        <button onclick="displaydot('.')">.</button>
         <button onclick="display(0)">0</button>
         <button onclick="evaluateSum()" class="equal">=</button>
       </input>

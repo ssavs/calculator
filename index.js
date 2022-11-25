@@ -1,13 +1,26 @@
 
 let outputScreen = document.getElementById("outputScreen");
 // let num = "";
+ let allowComa = true;
 
 function display (num){
-    outputScreen.value += num;
+    outputScreen.value = outputScreen.value + num;
 }
 
+function displayOpe (num){
+    outputScreen.value = outputScreen.value + num;
+    allowComa = true;
+}
+function displaydot (num){
+    if (allowComa === true) {
+        outputScreen.value = outputScreen.value + num;
+        allowComa = false;
+    }
+
+}
     function Clear(){
         outputScreen.value = "";
+        allowComa = true
     }
 
     function Del (){
@@ -18,6 +31,7 @@ function display (num){
 // num = num + operator;
 // document.getElementById('outputScreen').value = num;
 // }
+
 
 function evaluateSum() {
     // outdocument.getElementById('outputScreen').innerText

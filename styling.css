@@ -49,7 +49,7 @@ button{
     width: 45px;
     background-color: rgb(242, 242, 242);
     border:none;
-    border-radius: 25px;
+    border-radius: 35px;
     margin: 8px;
     font-size: 20px;
 }
@@ -67,6 +67,6 @@ button:hover {
 
 @media screen  and (max-width: 400px) {
     .calculator {
-        width: 90%;
+        width: 85%;
     }
 }
