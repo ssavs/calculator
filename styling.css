@@ -65,8 +65,8 @@ button:hover {
     width: 110px;
 }
 
-@media screen  and (max-width: 400px) {
+@media screen  and (max-width: 300px) {
     .calculator {
-        width: 85%;
+width: 100%;
     }
 }
